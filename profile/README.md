@@ -2,63 +2,47 @@
 
 # HelmForge
 
-Reusable open source Helm charts for Kubernetes workloads.
+Production-ready, truly open-source Helm charts for Kubernetes.
 
-HelmForge publishes charts in two formats:
+## Why HelmForge
 
-- Helm repository: `https://repo.helmforge.dev`
-- OCI registry: `oci://ghcr.io/helmforgedev/helm`
+- **Official upstream images** — every chart uses the image published by the application maintainers. No custom rebuilds, no proprietary layers.
+- **MIT licensed, forever** — charts, CI, docs — everything is MIT. No open-core, no paid tiers, no license changes.
+- **No abandoned open-source path** — other ecosystems moved their free images to legacy repositories that are no longer updated. HelmForge points to official upstream images maintained by the application authors.
+- **Pinned version tags** — explicit, immutable image tags. No `:latest`, no floating tags.
+- **Cosign signed** — every OCI artifact is signed with Sigstore Cosign keyless signing.
+- **Built-in S3 backup** — 17+ charts include automated backup to any S3-compatible endpoint.
+- **No vendor lock-in** — standard Helm, standard Kubernetes APIs, standard images.
 
-## What You Will Find Here
-
-- production-oriented Helm charts for common self-hosted and infrastructure workloads
-- chart documentation and usage examples
-- CI-tested templates with local runtime validation in `k3d`
-- Artifact Hub distribution and GitHub Container Registry publishing
-
-## Main Repositories
-
-- [charts](https://github.com/helmforgedev/charts): source repository for all Helm charts
-- [site](https://github.com/helmforgedev/site): public documentation website
-
-## Popular Charts
-
-- [postgresql](https://github.com/helmforgedev/charts/tree/main/charts/postgresql)
-- [mysql](https://github.com/helmforgedev/charts/tree/main/charts/mysql)
-- [redis](https://github.com/helmforgedev/charts/tree/main/charts/redis)
-- [rabbitmq](https://github.com/helmforgedev/charts/tree/main/charts/rabbitmq)
-- [keycloak](https://github.com/helmforgedev/charts/tree/main/charts/keycloak)
-- [minecraft](https://github.com/helmforgedev/charts/tree/main/charts/minecraft)
-- [komga](https://github.com/helmforgedev/charts/tree/main/charts/komga)
-- [flowise](https://github.com/helmforgedev/charts/tree/main/charts/flowise)
-
-## Quick Start
-
-### Helm repository
+## Install
 
 ```bash
 helm repo add helmforge https://repo.helmforge.dev
 helm repo update
-helm search repo helmforge/
 helm install my-release helmforge/<chart-name>
 ```
 
-### OCI
+Or via OCI:
 
 ```bash
 helm install my-release oci://ghcr.io/helmforgedev/helm/<chart-name>
 ```
 
-## Documentation
+## Repositories
 
-- Website: https://helmforge.dev
-- Chart docs: https://helmforge.dev/docs/charts
-- Artifact Hub: https://artifacthub.io/packages/search?repo=helmforge
+| Repository | Description |
+|------------|-------------|
+| [charts](https://github.com/helmforgedev/charts) | Source for all 33 Helm charts |
+| [site](https://github.com/helmforgedev/site) | Documentation website ([helmforge.dev](https://helmforge.dev)) |
+
+## Links
+
+- **Website**: https://helmforge.dev
+- **Charts catalog**: https://helmforge.dev/charts
+- **Documentation**: https://helmforge.dev/docs
+- **Comparison**: https://helmforge.dev/docs/comparison
+- **Artifact Hub**: https://artifacthub.io/packages/search?repo=helmforge
 
 ## Contributing
 
-Contributions are welcome in the chart source repository:
-
-- [helmforgedev/charts](https://github.com/helmforgedev/charts)
-
-Please follow the repository contribution guide and PR workflow documented there.
+Contributions are welcome in the [charts repository](https://github.com/helmforgedev/charts). Please follow the [contributing guide](https://github.com/helmforgedev/charts/blob/main/CONTRIBUTING.md).
