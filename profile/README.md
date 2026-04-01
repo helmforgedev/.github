@@ -1,3 +1,5 @@
+![HelmForge banner](./helmforge_banner.png)
+
 # HelmForge
 
 Reusable open source Helm charts for Kubernetes workloads.
