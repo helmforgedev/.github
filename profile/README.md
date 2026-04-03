@@ -2,17 +2,17 @@
 
 # HelmForge
 
-Production-ready, truly open-source Helm charts for Kubernetes.
+Open-source Helm charts, forged to last.
 
 ## Why HelmForge
 
 - **Official upstream images** — every chart uses the image published by the application maintainers. No custom rebuilds, no proprietary layers.
 - **MIT licensed, forever** — charts, CI, docs — everything is MIT. No open-core, no paid tiers, no license changes.
-- **No abandoned open-source path** — other ecosystems moved their free images to legacy repositories that are no longer updated. HelmForge points to official upstream images maintained by the application authors.
+- **The open-source alternative to Bitnami** — no vendor lock-in, no abandoned free tier, no proprietary wrappers. Official images, real maintenance, free forever.
 - **Pinned version tags** — explicit, immutable image tags. No `:latest`, no floating tags.
 - **Cosign signed** — every OCI artifact is signed with Sigstore Cosign keyless signing.
-- **Built-in S3 backup** — 17+ charts include automated backup to any S3-compatible endpoint.
-- **No vendor lock-in** — standard Helm, standard Kubernetes APIs, standard images.
+- **Built-in S3 backup** — 20+ charts include automated backup to any S3-compatible endpoint.
+- **Secure by default** — non-root containers, read-only filesystems, hardened security contexts.
 
 ## Install
 
@@ -32,7 +32,7 @@ helm install my-release oci://ghcr.io/helmforgedev/helm/<chart-name>
 
 | Repository | Description |
 |------------|-------------|
-| [charts](https://github.com/helmforgedev/charts) | Source for all 33 Helm charts |
+| [charts](https://github.com/helmforgedev/charts) | Source for all 56 Helm charts |
 | [site](https://github.com/helmforgedev/site) | Documentation website ([helmforge.dev](https://helmforge.dev)) |
 
 ## Links
@@ -42,7 +42,3 @@ helm install my-release oci://ghcr.io/helmforgedev/helm/<chart-name>
 - **Documentation**: https://helmforge.dev/docs
 - **Comparison**: https://helmforge.dev/docs/comparison
 - **Artifact Hub**: https://artifacthub.io/packages/search?repo=helmforge
-
-## Contributing
-
-Contributions are welcome in the [charts repository](https://github.com/helmforgedev/charts). Please follow the [contributing guide](https://github.com/helmforgedev/charts/blob/main/CONTRIBUTING.md).
