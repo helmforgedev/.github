@@ -32,7 +32,7 @@ helm install my-release oci://ghcr.io/helmforgedev/helm/<chart-name>
 
 | Repository | Description |
 |------------|-------------|
-| [charts](https://github.com/helmforgedev/charts) | Source for all 56 Helm charts |
+| [charts](https://github.com/helmforgedev/charts) | Source for all 50+ Helm charts |
 | [site](https://github.com/helmforgedev/site) | Documentation website ([helmforge.dev](https://helmforge.dev)) |
 
 ## Links
