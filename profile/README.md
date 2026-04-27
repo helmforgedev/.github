@@ -81,7 +81,6 @@ Browse the full catalog at [helmforge.dev/charts](https://helmforge.dev/charts) 
 | [fastmcp-tools](https://github.com/helmforgedev/fastmcp-tools) | Reusable MCP tool packages for GitHub, Kubernetes, HTTP, databases, and notifications |
 | [kubectl](https://github.com/helmforgedev/kubectl) | Minimal multi-architecture kubectl image for Kubernetes operations |
 | [strapi-base](https://github.com/helmforgedev/strapi-base) | Base Strapi image used by HelmForge Strapi deployments |
-| [habs](https://github.com/helmforgedev/habs) | HelmForge Autonomous Bump System for validated image and chart update workflows |
 
 ## Project Signals
 
