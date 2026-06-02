@@ -34,7 +34,7 @@
 
 HelmForge is an open-source Helm chart ecosystem for teams that want standard Kubernetes, standard Helm, official upstream images, and practical day-2 operations without a proprietary chart or image layer.
 
-The project currently maintains **62 Helm charts** across databases, messaging, identity, automation, CMS, analytics, AI tooling, networking, observability, and self-hosted applications. Charts are published through both a classic HTTPS Helm repository and OCI artifacts on GHCR.
+The project currently maintains **78 Helm charts** across databases, messaging, identity, automation, CMS, analytics, AI tooling, networking, observability, and self-hosted applications. Charts are published through both a classic HTTPS Helm repository and OCI artifacts on GHCR.
 
 Our design principle is simple:
 
@@ -47,7 +47,7 @@ Our design principle is simple:
 - **Apache-2.0 licensed** - project code, charts, documentation, and supporting tooling use a CNCF-aligned permissive license.
 - **Signed releases** - packaged charts include GPG provenance and OCI artifacts are signed with Sigstore Cosign through GitHub Actions OIDC.
 - **Values contracts** - every chart includes `values.yaml`, `values.schema.json`, examples, and CI scenarios.
-- **Built-in backup patterns** - 38 charts include optional S3-compatible backup workflows.
+- **Built-in backup patterns** - 39 charts include optional S3-compatible backup workflows.
 - **Operator-aware boundaries** - documentation is explicit about what a chart manages and when a domain-specific operator is the better fit.
 - **No open-core split** - charts, tests, docs, release automation, and examples are public.
 
@@ -86,9 +86,9 @@ Browse the full catalog at [helmforge.dev/charts](https://helmforge.dev/charts) 
 
 | Area | Current state |
 |------|---------------|
-| Charts | 62 chart packages |
-| Stable charts | 58 stable charts |
-| Backups | 38 charts with optional S3-compatible backup support |
+| Charts | 78 chart packages |
+| Stable charts | 78 stable charts |
+| Backups | 39 charts with optional S3-compatible backup support |
 | Distribution | HTTPS Helm repository and GHCR OCI registry |
 | Release integrity | GPG provenance plus Sigstore Cosign signatures |
 | Validation | Helm lint, strict lint, template rendering, helm-unittest, kubeconform, and Artifact Hub lint |
