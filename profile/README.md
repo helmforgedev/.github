@@ -47,7 +47,7 @@ Our design principle is simple:
 - **Apache-2.0 licensed** - project code, charts, documentation, and supporting tooling use a CNCF-aligned permissive license.
 - **Signed releases** - packaged charts include GPG provenance and OCI artifacts are signed with Sigstore Cosign through GitHub Actions OIDC.
 - **Values contracts** - every chart includes `values.yaml`, `values.schema.json`, examples, and CI scenarios.
-- **Built-in backup patterns** - 39 charts include optional S3-compatible backup workflows.
+- **Built-in backup patterns** - 42 charts include optional S3-compatible backup workflows.
 - **Operator-aware boundaries** - documentation is explicit about what a chart manages and when a domain-specific operator is the better fit.
 - **No open-core split** - charts, tests, docs, release automation, and examples are public.
 
@@ -88,7 +88,7 @@ Browse the full catalog at [helmforge.dev/charts](https://helmforge.dev/charts) 
 |------|---------------|
 | Charts | 83 chart packages |
 | Stable charts | 83 stable charts |
-| Backups | 39 charts with optional S3-compatible backup support |
+| Backups | 42 charts with optional S3-compatible backup support |
 | Distribution | HTTPS Helm repository and GHCR OCI registry |
 | Release integrity | GPG provenance plus Sigstore Cosign signatures |
 | Validation | Helm lint, strict lint, template rendering, helm-unittest, kubeconform, and Artifact Hub lint |
