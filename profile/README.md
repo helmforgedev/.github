@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD013 MD033 MD034 MD041 -->
+
 <p align="center">
   <img src="./helmforge_banner.png" alt="HelmForge" width="960" />
 </p>
@@ -43,13 +45,12 @@ Our design principle is simple:
 ## Why HelmForge
 
 - **Official upstream images** - charts prefer images published by the application maintainers, avoiding unnecessary rebuild layers and vendor-specific runtime wrappers.
-- **Pinned image versions** - defaults use explicit tags instead of floating `latest` tags.
-- **Apache-2.0 licensed** - project code, charts, documentation, and supporting tooling use a CNCF-aligned permissive license.
+- **Pinned, inspectable defaults** - image tags are explicit, values are schema-backed, and runtime assumptions are documented.
+- **Production validation** - charts are linted, rendered, unit-tested, schema-validated, Artifact Hub checked, and behavior-tested on Kubernetes before release.
 - **Signed releases** - packaged charts include GPG provenance and OCI artifacts are signed with Sigstore Cosign through GitHub Actions OIDC.
-- **Values contracts** - every chart includes `values.yaml`, `values.schema.json`, examples, and CI scenarios.
-- **Built-in backup patterns** - 39 charts include optional S3-compatible backup workflows.
-- **Operator-aware boundaries** - documentation is explicit about what a chart manages and when a domain-specific operator is the better fit.
-- **No open-core split** - charts, tests, docs, release automation, and examples are public.
+- **Day-2 patterns included** - 39 charts include optional S3-compatible backup workflows, and charts document operational boundaries clearly.
+- **CNCF-aligned licensing** - project code, charts, documentation, examples, and supporting tooling use Apache-2.0.
+- **No open-core split** - charts, tests, docs, release automation, examples, and governance are public.
 
 ## Install
 
@@ -74,13 +75,15 @@ Browse the full catalog at [helmforge.dev/charts](https://helmforge.dev/charts) 
 
 | Repository | Purpose |
 |------------|---------|
-| [charts](https://github.com/helmforgedev/charts) | Primary Helm chart repository, release automation, chart tests, schemas, and package metadata |
+| [charts](https://github.com/helmforgedev/charts) | Primary product repository: Helm charts, chart tests, values schemas, release automation, provenance, and package metadata |
 | [site](https://github.com/helmforgedev/site) | Documentation website at [helmforge.dev](https://helmforge.dev), chart catalog, roadmap, playground, and stack builder |
 | [.github](https://github.com/helmforgedev/.github) | Organization profile and shared community health files |
-| [fastmcp-server](https://github.com/helmforgedev/fastmcp-server) | Production-ready FastMCP server image with dynamic tool/resource/prompt loading |
-| [fastmcp-tools](https://github.com/helmforgedev/fastmcp-tools) | Reusable MCP tool packages for GitHub, Kubernetes, HTTP, databases, and notifications |
+| [fastmcp-server](https://github.com/helmforgedev/fastmcp-server) | Production-ready FastMCP server image with dynamic tool, resource, and prompt loading |
 | [kubectl](https://github.com/helmforgedev/kubectl) | Minimal multi-architecture kubectl image for Kubernetes operations |
+| [opencut](https://github.com/helmforgedev/opencut) | OpenCut container image packaged for HelmForge deployments |
+| [openreel-video](https://github.com/helmforgedev/openreel-video) | OpenReel Video container image using an unprivileged NGINX runtime |
 | [strapi-base](https://github.com/helmforgedev/strapi-base) | Base Strapi image used by HelmForge Strapi deployments |
+| [helmforge-ops](https://github.com/helmforgedev/helmforge-ops) | Private operations hub for invited contributors: agent skills, guardrails, knowledge, and cross-repo automation |
 
 ## Project Signals
 
@@ -91,7 +94,7 @@ Browse the full catalog at [helmforge.dev/charts](https://helmforge.dev/charts) 
 | Backups | 39 charts with optional S3-compatible backup support |
 | Distribution | HTTPS Helm repository and GHCR OCI registry |
 | Release integrity | GPG provenance plus Sigstore Cosign signatures |
-| Validation | Helm lint, strict lint, template rendering, helm-unittest, kubeconform, and Artifact Hub lint |
+| Validation | Helm lint, strict lint, template rendering, helm-unittest, kubeconform, Artifact Hub lint, and Kubernetes runtime validation |
 | Configuration | JSON Schema for every chart |
 | License | Apache-2.0 |
 | CNCF | Sandbox application preparation in progress |
