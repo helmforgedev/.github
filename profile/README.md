@@ -46,10 +46,10 @@ Our design principle is simple:
 
 - **Official upstream images** - charts prefer images published by the application maintainers, avoiding unnecessary rebuild layers and vendor-specific runtime wrappers.
 - **Pinned, inspectable defaults** - image tags are explicit, values are schema-backed, and runtime assumptions are documented.
-- **Production validation** - charts are linted, rendered, unit-tested, schema-validated, Artifact Hub checked, and behavior-tested on Kubernetes before release.
+- **Release CI validation** - charts are linted, rendered, unit-tested, schema-validated, and checked with Artifact Hub tooling before release.
 - **Signed releases** - packaged charts include GPG provenance and OCI artifacts are signed with Sigstore Cosign through GitHub Actions OIDC.
 - **Day-2 patterns included** - 39 charts include optional S3-compatible backup workflows, and charts document operational boundaries clearly.
-- **CNCF-aligned licensing** - project code, charts, documentation, examples, and supporting tooling use Apache-2.0.
+- **CNCF-aligned licensing** - the charts, documentation, examples, and core project materials use Apache-2.0; supporting image repositories may carry their own licenses.
 - **No open-core split** - charts, tests, docs, release automation, examples, and governance are public.
 
 ## Install
@@ -80,9 +80,6 @@ Browse the full catalog at [helmforge.dev/charts](https://helmforge.dev/charts) 
 | [.github](https://github.com/helmforgedev/.github) | Organization profile and shared community health files |
 | [fastmcp-server](https://github.com/helmforgedev/fastmcp-server) | Production-ready FastMCP server image with dynamic tool, resource, and prompt loading |
 | [kubectl](https://github.com/helmforgedev/kubectl) | Minimal multi-architecture kubectl image for Kubernetes operations |
-| [opencut](https://github.com/helmforgedev/opencut) | OpenCut container image packaged for HelmForge deployments |
-| [openreel-video](https://github.com/helmforgedev/openreel-video) | OpenReel Video container image using an unprivileged NGINX runtime |
-| [strapi-base](https://github.com/helmforgedev/strapi-base) | Base Strapi image used by HelmForge Strapi deployments |
 | [helmforge-ops](https://github.com/helmforgedev/helmforge-ops) | Private operations hub for invited contributors: agent skills, guardrails, knowledge, and cross-repo automation |
 
 ## Project Signals
@@ -94,9 +91,9 @@ Browse the full catalog at [helmforge.dev/charts](https://helmforge.dev/charts) 
 | Backups | 39 charts with optional S3-compatible backup support |
 | Distribution | HTTPS Helm repository and GHCR OCI registry |
 | Release integrity | GPG provenance plus Sigstore Cosign signatures |
-| Validation | Helm lint, strict lint, template rendering, helm-unittest, kubeconform, Artifact Hub lint, and Kubernetes runtime validation |
+| Validation | Helm lint, strict lint, template rendering, helm-unittest, kubeconform, and Artifact Hub lint |
 | Configuration | JSON Schema for every chart |
-| License | Apache-2.0 |
+| License | Apache-2.0 for charts, docs, examples, and core project materials; supporting image repositories may vary |
 | CNCF | Sandbox application preparation in progress |
 
 ## Community
