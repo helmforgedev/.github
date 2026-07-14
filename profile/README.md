@@ -87,7 +87,7 @@ Browse the full catalog at [helmforge.dev/charts](https://helmforge.dev/charts) 
 | Area | Current state |
 |------|---------------|
 | Charts | 91 chart packages |
-| Stable charts | 84 stable charts |
+| Stable charts | 85 stable charts |
 | Backups | 39 charts with optional S3-compatible backup support |
 | Distribution | HTTPS Helm repository and GHCR OCI registry |
 | Release integrity | GPG provenance plus Sigstore Cosign signatures |
