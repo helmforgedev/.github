@@ -48,7 +48,7 @@ Our design principle is simple:
 - **Pinned, inspectable defaults** - image tags are explicit, values are schema-backed, and runtime assumptions are documented.
 - **Release CI validation** - charts are linted, rendered, unit-tested, schema-validated, and checked with Artifact Hub tooling before release.
 - **Signed releases** - packaged charts include GPG provenance and OCI artifacts are signed with Sigstore Cosign through GitHub Actions OIDC.
-- **Day-2 patterns included** - 40 charts include optional S3-compatible backup workflows, and charts document operational boundaries clearly.
+- **Day-2 patterns included** - 39 charts include optional S3-compatible backup workflows, and charts document operational boundaries clearly.
 - **CNCF-aligned licensing** - the charts, documentation, examples, and core project materials use Apache-2.0; supporting image repositories may carry their own licenses.
 - **No open-core split** - charts, tests, docs, release automation, examples, and governance are public.
 
@@ -88,7 +88,7 @@ Browse the full catalog at [helmforge.dev/charts](https://helmforge.dev/charts) 
 |------|---------------|
 | Charts | 93 chart packages |
 | Stable charts | 86 stable charts |
-| Backups | 40 charts with optional S3-compatible backup support |
+| Backups | 39 charts with optional S3-compatible backup support |
 | Distribution | HTTPS Helm repository and GHCR OCI registry |
 | Release integrity | GPG provenance plus Sigstore Cosign signatures |
 | Validation | Helm lint, strict lint, template rendering, helm-unittest, kubeconform, and Artifact Hub lint |
