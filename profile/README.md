@@ -36,7 +36,7 @@
 
 HelmForge is an open-source Helm chart ecosystem for teams that want standard Kubernetes, standard Helm, official upstream images, and practical day-2 operations without a proprietary chart or image layer.
 
-The project currently maintains **114 Helm charts** across databases, messaging, identity, automation, education, CMS, analytics, AI tooling, networking, observability, and self-hosted applications. Charts are published through both a classic HTTPS Helm repository and OCI artifacts on GHCR.
+The project currently maintains **115 Helm charts** across databases, messaging, identity, automation, education, CMS, analytics, AI tooling, networking, observability, and self-hosted applications. Charts are published through both a classic HTTPS Helm repository and OCI artifacts on GHCR.
 
 Our design principle is simple:
 
@@ -86,8 +86,8 @@ Browse the full catalog at [helmforge.dev/charts](https://helmforge.dev/charts) 
 
 | Area | Current state |
 |------|---------------|
-| Charts | 114 chart packages |
-| Stable charts | 114 stable charts |
+| Charts | 115 chart packages |
+| Stable charts | 115 stable charts |
 | Backups | 43 charts with optional S3-compatible backup support |
 | Distribution | HTTPS Helm repository and GHCR OCI registry |
 | Release integrity | GPG provenance plus Sigstore Cosign signatures |
