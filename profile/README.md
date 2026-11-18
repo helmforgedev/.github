@@ -15,6 +15,12 @@
   ·
   <a href="https://helmforge.dev/docs"><strong>Documentation</strong></a>
   ·
+  <a href="https://helmforge.dev/playground"><strong>Values Studio</strong></a>
+  ·
+  <a href="https://helmforge.dev/stack"><strong>Stack Builder</strong></a>
+  ·
+  <a href="https://helmforge.dev/roadmap"><strong>Roadmap</strong></a>
+  ·
   <a href="https://repo.helmforge.dev"><strong>Helm Repository</strong></a>
   ·
   <a href="https://artifacthub.io/packages/search?repo=helmforge"><strong>Artifact Hub</strong></a>
